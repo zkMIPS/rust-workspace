@@ -131,6 +131,7 @@ static TARGETS: &[&str] = &[
     "mipsel-unknown-linux-musl",
     "mips-mti-none-elf",
     "mipsel-mti-none-elf",
+    "mips-zkm-zkvm-elf",
     "nvptx64-nvidia-cuda",
     "powerpc-unknown-linux-gnu",
     "powerpc64-unknown-linux-gnu",
