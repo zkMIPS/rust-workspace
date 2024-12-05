@@ -1806,6 +1806,8 @@ supported_targets! {
 
     ("mips-unknown-linux-uclibc", mips_unknown_linux_uclibc),
     ("mipsel-unknown-linux-uclibc", mipsel_unknown_linux_uclibc),
+    ("mips-zkm-zkvm-elf", mips_zkm_zkvm_elf),
+    ("mipsel-zkm-zkvm-elf", mipsel_zkm_zkvm_elf),
 
     ("i686-linux-android", i686_linux_android),
     ("x86_64-linux-android", x86_64_linux_android),
