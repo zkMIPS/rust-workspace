@@ -4,12 +4,12 @@ use crate::spec::{Cc, LinkerFlavor, Lld, PanicStrategy, RelocModel, Target, Targ
 pub(crate) fn target() -> Target {
     Target {
         data_layout: "E-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64".into(),
-        llvm_target: "mips".into(),
+        llvm_target: "mips-zkm-zkvm-elf".into(),
         metadata: crate::spec::TargetMetadata {
             description: Some("ZKM's zero-knowledge Virtual Machine (MIPS2 ISA)".into()),
             tier: Some(3),
             host_tools: Some(false),
-            std: None, // ?
+            std: Some(false),
         },
         pointer_width: 32,
         arch: "mips".into(),
