@@ -25,7 +25,7 @@ pub(crate) fn target() -> Target {
             max_atomic_width: Some(32),
             atomic_cas: true,
 
-            features: "+mips32r2,+soft-float,+noabicalls".into(),
+            features: "+mips32r2,+inst-same-cost,+soft-float,+noabicalls".into(),
             executables: true,
             panic_strategy: PanicStrategy::Abort,
             relocation_model: RelocModel::Static,
