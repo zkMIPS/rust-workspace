@@ -20,12 +20,12 @@ pub(crate) fn target() -> Target {
             linker_flavor: LinkerFlavor::Gnu(Cc::No, Lld::Yes),
             linker: Some("rust-lld".into()),
             endian: Endian::Little,
-            cpu: "mips2".into(),
+            cpu: "mips32r2".into(),
 
             max_atomic_width: Some(32),
             atomic_cas: true,
 
-            features: "+mips2,+soft-float,+noabicalls".into(),
+            features: "+mips32r2,+inst-same-cost,+soft-float,+noabicalls".into(),
             executables: true,
             panic_strategy: PanicStrategy::Abort,
             relocation_model: RelocModel::Static,
